@@ -9,9 +9,9 @@ python3, pip3
 ffmpeg(this is preinstalled on Elemental Server, but is recommened to upgrade to the latest version in order to better support hevc codec), ffprobe
 Sqlite3(this is installed on CentOS server)
 * B. Install python modules
-pip3 install pyinotify
-pip3 install natsort
-pip3 install chardet
+<br/>pip3 install pyinotify
+<br/>pip3 install natsort
+<br/>pip3 install chardet<br/>
 * C. Create an addon work folder and a watchfolder
 mkdir /data/server/addon
 mkdir /data/server/cctv 
