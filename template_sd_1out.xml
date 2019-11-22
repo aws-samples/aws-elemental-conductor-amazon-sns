@@ -1,0 +1,39 @@
+<job>
+  <input>
+    <file_input>
+        <uri>/data/server/sd1.mp4</uri>
+    </file_input>
+    <input_clipping>
+      <start_timecode>00:00:00:00</start_timecode>
+      <end_timecode>00:01:00:00</end_timecode>
+    </input_clipping>
+  </input>
+  <timecode_config>
+    <source>zerobased</source>
+  </timecode_config>
+  <notification>
+    <email></email>
+    <web_callback_url>http://172.31.43.107:8888/</web_callback_url>
+    <on_started>true</on_started>
+    <on_complete>true</on_complete>
+  </notification>
+  <output_group>
+    <custom_name>file_group</custom_name>
+    <name nil="true" />
+    <order>1</order>
+    <file_group_settings>
+      <destination>
+        <uri>/data/server/path/1Out/</uri>
+      </destination>
+    </file_group_settings>
+    <type>file_group_settings</type>
+    <output>
+      <description nil="true" />
+      <extension>ts</extension>
+      <name_modifier>_sd1</name_modifier>
+      <order>1</order>
+    </output>
+  </output_group>
+  <profile>19</profile>
+</job>
+
